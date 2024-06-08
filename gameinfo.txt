@@ -1,0 +1,32 @@
+"GameInfo"
+{
+	// This is what shows up in the 'Third Party Games' area of the Steam games list.
+	game	"sbep"
+	title	"sbep"				// Main Menu large Text
+	title2	"based on SFM SDK technology"	// Main Menu small text
+	type	multiplayer_only
+
+	nomodels 1
+	nohimodel 1
+	nocrosshair 0
+	hidden_maps
+	{
+		"test_speakers"		1
+		"test_hardware"		1
+	}
+	nodegraph 0
+	
+	FileSystem
+	{
+		SteamAppId				1840
+		ToolsAppId				1840
+
+		SearchPaths
+		{
+			Game				|gameinfo_path|.
+			Game				tf_movies
+			Game				tf
+			Game				hl2
+		}
+	}
+}
